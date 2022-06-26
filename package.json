@@ -1,0 +1,16 @@
+{
+    "name": "stan-nvim",
+    "displayName": "stan-nvim",
+    "description": "Stan language support for Neovim",
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "contributes": {
+        "snippets": [
+			{
+				"language": "stan",
+				"path": "./snippets.json"
+			}
+        ]
+    }
+}
