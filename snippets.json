@@ -2,16 +2,18 @@
     "else": {
         "prefix": "else",
         "body": [
-            "else {",
-                "\t${0:/* code */}",
-                "}"
+            "else",
+            "{",
+            "\t${0:/* code */}",
+            "}"
         ],
         "description": "Code snippet for 'else' conditional"
     },
     "elseif": {
         "prefix": "elseif",
         "body": [
-            "else if (${1:/* condition */}) {",
+            "else if (${1:/* condition */})",
+			"{",
             "\t${0:/* code */}",
             "}"
         ],
@@ -20,7 +22,8 @@
     "for":{
         "prefix": "for",
         "body": [
-            "for (${1:identifier} in ${2:collection}) {",
+            "for (${1:identifier} in ${2:collection})",
+			"{",
             "\t${0:/* code */}",
             "}"
         ],
@@ -29,7 +32,8 @@
     "if": {
         "prefix": "if",
         "body": [
-            "if (${1:/* condition */}) {",
+            "if (${1:/* condition */})",
+			"{",
             "\t${0:/* code */}",
             "}"
         ],
@@ -38,9 +42,12 @@
     "if-else block": {
         "prefix": "ifelse",
         "body": [
-            "if (${1:/* condition */}) {",
+            "if (${1:/* condition */})",
+			"{",
             "\t${2:/* code */}",
-            "} else {",
+            "}",
+            "else",
+            "{",
             "\t${0:/* code */}",
             "}"
         ],
@@ -49,7 +56,8 @@
     "while": {
         "prefix": "while",
         "body": [
-            "while (${1:/* condition */}) {",
+            "while (${1:/* condition */})",
+			"{",
             "\t${0:/* code */}",
             "}"
         ],
@@ -58,7 +66,8 @@
     "profile": {
         "prefix": "profile",
         "body": [
-            "profile(\"${1:name}\") {",
+            "profile(\"${1:name}\")",
+			"{",
             "\t${0:/* code to be profiled */}",
             "}"
         ]
@@ -66,63 +75,70 @@
     "data": {
         "prefix": "data",
         "body": [
-            "data {",
-                "\t${0:/* ... declarations ... */}",
-                "}"
+            "data",
+            "{",
+            "\t${0:/* ... declarations ... */}",
+            "}"
         ],
         "description": "Code snippet for 'data' block"
     },
     "transformed data": {
         "prefix": "transformed data",
         "body": [
-            "transformed data {",
-                "\t${0:/* ... declarations ... statements ... */}",
-                "}"
+            "transformed data",
+            "{",
+            "\t${0:/* ... declarations ... statements ... */}",
+            "}"
         ],
         "description": "Code snippet for 'transformed data' block"
     },
     "parameters": {
         "prefix": "parameters",
         "body": [
-            "parameters {",
-                "\t${0:/* ... declarations ... */}",
-                "}"
+            "parameters",
+            "{",
+            "\t${0:/* ... declarations ... */}",
+            "}"
         ],
         "description": "Code snippet for 'parameters' block"
     },
     "transformed parameters": {
         "prefix": "transformed parameters",
         "body": [
-            "transformed parameters {",
-                "\t${0:/* ... declarations ... statements ... */}",
-                "}"
+            "transformed parameters",
+            "{",
+            "\t${0:/* ... declarations ... statements ... */}",
+            "}"
         ],
         "description": "Code snippet for 'transformed parameters' block"
     },
     "model": {
         "prefix": "model",
         "body": [
-            "model {",
-                "\t${0:/* ... declarations ... statements ... */}",
-                "}"
+            "model",
+            "{",
+            "\t${0:/* ... declarations ... statements ... */}",
+            "}"
         ],
         "description": "Code snippet for 'model' block"
     },
     "generated quantities": {
         "prefix": "generated quantities",
         "body": [
-            "generated quantities {",
-                "\t${0:/* ... declarations ... statements ... */}",
-                "}"
+            "generated quantities",
+            "{",
+            "\t${0:/* ... declarations ... statements ... */}",
+            "}"
         ],
         "description": "Code snippet for 'generated quantities' block"
     },
     "functions": {
         "prefix": "functions",
         "body": [
-            "functions {",
-                "\t${0:/* ... function declarations and definitions ... */}",
-                "}"
+            "functions",
+            "{",
+            "\t${0:/* ... function declarations and definitions ... */}",
+            "}"
         ],
         "description": "Code snippet for 'functions' block"
     },
