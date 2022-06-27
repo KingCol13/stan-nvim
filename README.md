@@ -29,6 +29,12 @@ parser_config.stan = {
 }
 ```
 
+Then run:
+
+```vim
+:TSInstall stan
+```
+
 # Features
 
 - stan filetype detection
